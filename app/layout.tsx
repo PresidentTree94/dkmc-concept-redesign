@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
+import { socials } from "@/data/socialData";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -18,12 +19,6 @@ export const metadata: Metadata = {
   description: "A concept redesign for the Dupont Kalorama Museum Consortium (DKMC) website, not affiliated or commissioned by DKMC.",
 };
 
-const socials = [
-  { icon: "ri-instagram-line", link: "" },
-  { icon: "ri-facebook-fill", link: "" },
-  { icon: "ri-twitter-x-line", link: "" }
-];
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,7 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfairDisplay.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         {children}
-        <footer className="bg-[oklch(0.22_0_0)] mt-16">
+        <footer className="bg-foreground-dark mt-16">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 sm:grid-cols-[auto_auto] lg:grid-cols-[auto_auto_auto] gap-8 py-14">
               <div className="max-w-xs space-y-4">
@@ -53,7 +48,7 @@ export default function RootLayout({
               </div>
               <div className="hidden lg:block space-y-4 justify-self-end">
                 <h3 className="tiny font-semibold text-white/60">Disclaimer</h3>
-                <p className="text-white/40 text-sm max-w-sm">This is an independent redesign concept created for portfolio purposes. I am not affiliated with Dupont-Kalorama Museums Consortium. Website content and photographs belong to the company.</p>
+                <p className="text-white/40 text-sm max-w-sm">This is an independent redesign concept created for portfolio purposes. I am not affiliated with Dupont-Kalorama Museums Consortium. Website content and photographs belong to the company or online.</p>
               </div>
             </div>
             <div className="py-6 border-t border-white/10 flex flex-col sm:flex-row text-white/40 text-xs text-center justify-center items-center gap-2">

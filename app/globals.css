@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @theme inline {
+  --color-primary-dark: oklch(0.54 0.066 160);
+  --color-primary-light: oklch(0.68 0.113 168);
+  --color-foreground-dark: oklch(0.22 0 0);
+  --color-foreground-light: oklch(0.51 0 0);
+  --color-border: oklch(0.96 0.005 78);
   --font-display: var(--font-playfair-display);
   --font-body: var(--font-inter);
 }
