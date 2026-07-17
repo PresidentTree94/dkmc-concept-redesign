@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Decor from "@/components/Decor";
 import { museums } from "@/data/museumData";
 
 export default function Home() {
@@ -20,16 +21,12 @@ export default function Home() {
           <p className="tiny text-white/70">Promoting "off the Mall" museums and our neighborhoods</p>
         </div>
       </section>
-      <Navbar position="sticky" />
-      <article className="text-center max-w-5xl mx-auto py-14 px-6">
+      <Navbar />
+      <article className="text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">Welcome to the<br/>Dupont-Kalorama Museums Consortium</h2>
-        <div className="flex items-center justify-center gap-3 mt-6 mb-10">
-          <div className="h-px w-12 bg-primary-light"></div>
-          <div className="w-2 h-2 rounded-full bg-primary-light"></div>
-          <div className="h-px w-12 bg-primary-light"></div>
-        </div>
+        <Decor className="mt-6 mb-10" />
         <p className="max-w-2xl mx-auto text-base md:text-lg text-foreground-light">The Dupont Kalorama Museums Consortium exists to mutually advance the member institutions and create neighborhood cultural experiences. DKMC was established in 1983 to promote "off the Mall" museums and their neighborhoods — seven unique institutions within walking distance in one of DC's most historic districts.</p>
-        <div className="text-center mb-20 py-12 px-8 bg-primary-light/13 rounded-2xl border border-primary-light/15 mt-16 mb-20">
+        <div className="box text-center mt-16 mb-20">
           <span className="tiny font-semibold text-foreground-light">Upcoming Event</span>
           <Link href="/walk-weekend" className="font-display text-2xl md:text-3xl font-semibold mt-3 mb-2 block text-foreground-dark hover:text-primary-dark transition-colors">Museum Walk Weekend</Link>
           <span className="text-sm font-medium text-foreground-light">June 6 - 7, 2026</span>
@@ -43,7 +40,7 @@ export default function Home() {
         </div>
         <div className="space-y-6 my-12 text-left">
           {museums.map((m, index) => (
-            <div key={index} className="bg-[oklch(0.98_0.003_85)] rounded-xl border border-border hover:border-primary-light/50 overflow-hidden flex flex-col sm:flex-row hover:-translate-y-0.5 group transition-all duration-300">
+            <div key={index} className="bg-card rounded-xl border border-border hover:border-primary-light/50 overflow-hidden flex flex-col sm:flex-row hover:-translate-y-0.5 group transition-all duration-300">
               <div className="relative aspect-video sm:aspect-auto sm:w-48 overflow-hidden">
                 <Image src={`/${m.link}.png`} alt={m.title} fill sizes="100%" className="object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>

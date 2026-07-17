@@ -35,16 +35,16 @@ export default function RootLayout({
                 <h3 className="text-white font-semibold text-2xl">Dupont-Kalorama<br/>Museums Consortium</h3>
                 <p className="text-white/50 text-sm">Promoting "off the Mall" museums and our neighborhoods since 1983.</p>
               </div>
-              <div className="text-white/50 sm:text-right lg:text-center space-y-5">
-                <h3 className="tiny font-semibold">Connect</h3>
+              <div className="sm:text-right lg:text-center space-y-5">
+                <h3 className="tiny font-semibold text-white/60">Connect</h3>
                 <div className="flex sm:justify-end lg:justify-center gap-3">
                   {socials.map((s, index) => (
-                    <a key={index} href={s.link} className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center">
+                    <a key={index} href={s.link} className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white/70 hover:text-white hover:border-white/40 hover:bg-white/5 transition-colors duration-300">
                       <i className={`${s.icon} text-lg`}></i>
                     </a>
                   ))}
                 </div>
-                <a href="mailto:dupontkaloramamc@gmail.com" className="inline-flex items-center gap-2 text-sm"><i className="ri-mail-line text-xs"></i>dupontkaloramamc@gmail.com</a>
+                <a href="mailto:dupontkaloramamc@gmail.com" className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"><i className="ri-mail-line text-xs"></i>dupontkaloramamc@gmail.com</a>
               </div>
               <div className="hidden lg:block space-y-4 justify-self-end">
                 <h3 className="tiny font-semibold text-white/60">Disclaimer</h3>

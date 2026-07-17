@@ -6,12 +6,17 @@
   --color-foreground-dark: oklch(0.22 0 0);
   --color-foreground-light: oklch(0.51 0 0);
   --color-border: oklch(0.96 0.005 78);
+  --color-card: oklch(0.98 0.003 85);
   --font-display: var(--font-playfair-display);
   --font-body: var(--font-inter);
 }
 
 body {
   font-family: var(--font-body);
+}
+
+article {
+  @apply max-w-5xl mx-auto py-14 px-6;
 }
 
 h1, h2, h3 {
@@ -25,5 +30,9 @@ p {
 @layer components {
   .tiny {
     @apply text-xs uppercase tracking-widest;
+  }
+
+  .box {
+    @apply bg-primary-light/13 border border-primary-light/15 rounded-2xl p-8 sm:p-12;
   }
 }
