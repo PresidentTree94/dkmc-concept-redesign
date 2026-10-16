@@ -28,7 +28,7 @@ export default function Home() {
         <p className="max-w-2xl mx-auto text-base md:text-lg text-foreground-light">The Dupont Kalorama Museums Consortium exists to mutually advance the member institutions and create neighborhood cultural experiences. DKMC was established in 1983 to promote "off the Mall" museums and their neighborhoods — seven unique institutions within walking distance in one of DC's most historic districts.</p>
         <div className="box text-center mt-16 mb-20">
           <span className="tiny font-semibold text-foreground-light">Upcoming Event</span>
-          <Link href="/walk-weekend" className="font-display text-2xl md:text-3xl font-semibold mt-3 mb-2 block text-foreground-dark hover:text-primary-dark transition-colors">Museum Walk Weekend</Link>
+          <Link href="#" className="font-display text-2xl md:text-3xl font-semibold mt-3 mb-2 block text-foreground-dark hover:text-primary-dark transition-colors">Museum Walk Weekend</Link>
           <span className="text-sm font-medium text-foreground-light">June 6 - 7, 2026</span>
           <p className="text-foreground-light text-sm mt-1 mb-8">Free admission to all seven participating museums</p>
           <a href="https://www.eventbrite.com/e/museum-walk-weekend-2026-tickets-1987940099351" target="_blank" rel="noopener noreferrer" className="bg-primary-dark text-white text-sm font-semibold uppercase tracking-widest px-10 py-3.5 rounded-full inline-block hover:bg-[oklch(0.48_0.068_159)] hover:-translate-y-0.5 transition-all duration-300">Register on Eventbrite</a>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <Link href="/consortium-members" className="inline-flex font-medium items-center gap-2 text-sm text-primary-dark hover:text-[oklch(0.48_0.068_159)] transition-colors">View all museums and details<i className="ri-arrow-right-line"></i></Link>
+        <Link href="#" className="inline-flex font-medium items-center gap-2 text-sm text-primary-dark hover:text-[oklch(0.48_0.068_159)] transition-colors">View all museums and details<i className="ri-arrow-right-line"></i></Link>
       </article>
     </main>
   );

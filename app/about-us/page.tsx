@@ -60,7 +60,7 @@ export default function About() {
               </div>
             </div>
             <div className="text-center mt-10">
-              <Link href="/photo-gallery" className="border-2 border-primary-dark px-10 py-3.5 rounded-full text-sm uppercase font-semibold tracking-widest text-primary-dark hover:bg-primary-dark hover:text-white hover:-translate-y-0.5 inline-block transition-all duration-300">View Photo Gallery</Link>
+              <Link href="#" className="border-2 border-primary-dark px-10 py-3.5 rounded-full text-sm uppercase font-semibold tracking-widest text-primary-dark hover:bg-primary-dark hover:text-white hover:-translate-y-0.5 inline-block transition-all duration-300">View Photo Gallery</Link>
             </div>
           </section>
         </article>
