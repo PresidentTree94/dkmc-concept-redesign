@@ -31,7 +31,7 @@ export default function RootLayout({
         <footer className="bg-foreground-dark mt-16">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[auto_auto_auto] justify-between gap-8 py-14">
-              <div className="space-y-4">
+              <div className="space-y-4 sm:max-w-xs">
                 <h3 className="text-white font-semibold text-2xl">Dupont-Kalorama Museums Consortium</h3>
                 <p className="text-white/50 text-sm">Promoting "off the Mall" museums and our neighborhoods since 1983.</p>
               </div>
